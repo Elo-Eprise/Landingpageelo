@@ -1,0 +1,209 @@
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent: #0c0642;
+  --shadow: 8px 8px 0px var(--primary);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #080404;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 20px;
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar li:hover {
+ transform:translateY(-10)
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar img{
+    width: 100px;
+    height: 50px;
+    margin: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.navbar {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: #000000;
+    z-index: 1000;
+    top: 20px;
+}
+
+.wwa
+{
+    box-shadow: #333 0px 0px 10px;
+}
+
+.services {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.lista {
+    margin: 10px 0;
+    padding: 10px;
+    height: 55px;
+    display: flex;         /* Coloca os <li> lado a lado */
+    gap: 15px;             /* Cria um espaço entre os itens */
+    list-style: none;      /* Remove as bolinhas da lista */
+    padding: 0;            /* Remove o recuo padrão da lista */
+    margin: 0;  
+    
+}
+
+.lista li{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: translateY(-10);
+    border-radius: 5px;
+    border:solid #ffffff;
+    width: 130px;
+    height: 50px;
+    display:flex;
+    box-shadow: #080404;
+    padding: 10px 20px;
+    background-color: grey;
+    font-size: large;
+    cursor:pointer;
+}
+
+
+.lista li:hover{
+    transform: translateY(-10px);
+    background-color: #080404;
+    color: white;
+}
+
+.contac{
+    box-shadow: gray;
+
+
+}
+
+.contact {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+}
+
+.contact h2 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact form {
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid var(--primary);
+  padding: 40px 30px;
+  background-color: var(--secondary);
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}
+
+.contact .input-group {
+  margin-bottom: 20px;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--primary);
+  background-color: var(--secondary);
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 4px 4px 0px var(--primary);
+}
+
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--accent);
+  color: var(--secondary);
+  border: 2px solid var(--primary);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.contact button:hover {
+  box-shadow: 4px 4px 0px var(--primary);
+  transform: translate(-2px, -2px);
+}
+
+.footer{
+    background-color: #000000;
+    color: aliceblue;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding:20px ;
+    text-align: center;
+}
