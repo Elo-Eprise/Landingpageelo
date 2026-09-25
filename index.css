@@ -8,12 +8,14 @@
 }
 html {
     scroll-behavior: smooth;
+    background-color: #02020E;
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
 }
 
 
 /* NAVBAR DA PAGINA  */
 .navbar {
-    background-color: #080404;
+    background-color: #02020E;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -21,22 +23,35 @@ html {
     z-index: 1000;
     position: fixed;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar a {
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    
+  }
+  
+  
+  .navbar a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     padding: 14px 20px;
     display: inline-block;
-    font-family: 'Arial', sans-serif;
-
-}
-
-.navbar ul{
+    
+  }
+  
+  .navbar ul{
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+  margin: 0 10px;
+  display: inline-block;
 }
 
 
@@ -46,9 +61,9 @@ html {
 }
 
 .navbar a:hover {
-    background-color: #333;
+    background-color: #8584a2;
     color: #ffffff;
-    border-radius: 4px;
+    border-radius: 100px;
     transition: background-color 0.3s ease;
 }
 
@@ -56,8 +71,8 @@ html {
     width: 100px;
     height: 50px;
     margin: 5px 10px;
-    background-color: #ffffff;
     border-radius: 4px;
+    margin-left: 40px;
 }
 
 .navbar {
@@ -67,7 +82,7 @@ html {
 
 .navbar li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
     color: #000000;
     z-index: 1000;
     top: 20px;
@@ -76,16 +91,38 @@ html {
 
 /* QUEM SOMOS E VALORES PESSOAIS (WWA = WHO WHE ARE ) */
 
-.wwa
-{
-    box-shadow: #333 0px 0px 10px;
+.wwa{
+  color:#ffff;
+  margin-top: 1px;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
+
+.wwa h1{
+  font-size: 150px;
+
+}
+
+.signi{
+ font-size:50px;
+ margin-top: -100px;
+ color: #102A8C;
+
+}
+.p2 {
+  font-size: 30px;
+  margin-top: -100px;
+  color: #8584a2;
+ 
+ }
+
 
 
 /* CSS DOS SERVIÇOS  */
 .services {
     padding: 100px 20px;
     min-height: 100vh;
+    margin-top: 500px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -238,6 +275,7 @@ html {
     text-align: center;
     padding:20px ;
 }
+
 
 
 .icons i {

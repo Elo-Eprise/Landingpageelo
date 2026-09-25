@@ -12,7 +12,7 @@
 </head>
   <body>
     <section class="navbar" id="home">
-      <img src="eloo-logo.png" alt="Logo da empresa" href="#home" />
+      <img src="eloo_e_l_branco.png" alt="Logo da empresa" href="#home" />
       <ul>
         <li><a href="#home">Início</a></li>
         <li><a href="#wwa">Sobre</a></li>
@@ -22,14 +22,12 @@
     </section>
     <br /><br /><br /><br /><br />
     <section class="wwa" id="wwa">
-      <h1>Quem somos</h1>
-      <p>
-        Somos uma empresa dedicada a fornecer soluções inovadoras e de alta
-        qualidade para nossos clientes. Nosso objetivo é criar produtos e
-        serviços que atendam às necessidades do mercado e superem as
-        expectativas dos nossos clientes.
+      <h1 class="sigla">ELO</h1>
+      <h1 class="signi">Efficiency, Logic, Optimization</h1>
+      <p class="p2">
+      Nosso objetivo é ajudar nossos clientes a
+      alcançar seus <strong>objetivos</strong> por meio da tecnologia.
       </p>
-      <img src="https://via.placeholder.com/400x200" alt="Imagem ilustrativa" />
     </section>
     <section class="services" id="servicos">
       <h2>Serviços</h2>
@@ -50,29 +48,31 @@
     </section>
     <section class="contact" id="contato">
       <h2>Contato</h2>
-      <form>
-        <div class="input-group">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="input-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="input-group">
-          <label for="message">Mensagem:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
+      <h1>Formulário de Contato</h1>
+    <form
+      action="https://formsubmit.co/eloenterprise.company@gmail.com"
+      method="POST"
+      class="form"
+    >
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="message">Mensagem</label>
+      <textarea name="message" id="message" required></textarea>
+      <button type="submit">Enviar</button>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500//obrigado.html">
+    </form>
+
     </section>
 
     <section class="footer">
-      <p>&copy; 2024 elo. Todos os direitos reservados.</p>
+      <p>&copy; 2026 elo. Todos os direitos reservados.</p>
       <div class="icons">
       <a href="">
         <i id="git" class="fa-brands fa-github"></i>
-      </a>
+      </a>  
       <a href="">
         <i id="email" class="fa-solid fa-envelope"></i>
       </a>
@@ -81,6 +81,4 @@
       </a>
       </div>
     </section>
-  </body>
-  <link rel="script" href="index.ts">
-</html>
+</html> 
