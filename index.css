@@ -47,6 +47,7 @@ html {
     justify-content: center;
     list-style: none;
     display: flex;
+    margin-left: 600px;
 }
 
 .navbar ul li{
@@ -111,11 +112,14 @@ html {
 }
 .p2 {
   font-size: 30px;
-  margin-top: -100px;
+  margin-top: -80px;
   color: #8584a2;
  
  }
 
+ .ponto{
+  color: #ffff;
+ }
 
 
 /* CSS DOS SERVIÇOS  */
