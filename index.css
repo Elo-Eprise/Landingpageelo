@@ -23,8 +23,9 @@ html {
     z-index: 1000;
     position: fixed;
     display: flex;
-    font-family: 'Lora', Georgia, 'Times New Roman', serif;
-    
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;   
+    list-style: none;
+    text-decoration: none;
   }
   
   
@@ -34,25 +35,28 @@ html {
     font-size: 18px;
     padding: 14px 20px;
     display: inline-block;
-    
+    align-items: center;
+    justify-content: center;
   }
   
-  .navbar ul{
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    display: flex;
-    margin-left: 600px;
+.navbar ul{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  margin-top:12px ;
 }
 
 .navbar ul li{
   margin: 0 10px;
   display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -76,10 +80,6 @@ html {
     margin-left: 40px;
 }
 
-.navbar {
-    list-style: none;
-    text-decoration: none;
-}
 
 .navbar li {
     display: inline-block;
