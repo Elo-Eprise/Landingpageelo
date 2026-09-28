@@ -10,10 +10,11 @@ html {
     scroll-behavior: smooth;
     background-color: #02020E;
     font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    background-image: radial-gradient(circle, rgba(244, 246, 251, 0.15) 1px, transparent 1px);
+    background-size: 25px 25px;
 }
 
-
-/* NAVBAR DA PAGINA  */
+/* PAGE NAVIGATION BAR */
 .navbar {
     background-color: #02020E;
     overflow: hidden;
@@ -23,22 +24,26 @@ html {
     z-index: 1000;
     position: fixed;
     display: flex;
-    font-family: 'Lora', Georgia, 'Times New Roman', serif;   
+    font-family: 'Sora', system-ui, sans-serif;
     list-style: none;
     text-decoration: none;
+    font-size: 18px;
   }
-  
-  
+ 
+ 
   .navbar a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     padding: 14px 20px;
     display: inline-block;
     align-items: center;
     justify-content: center;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    margin-left: -40px;
+    
   }
-  
+ 
 .navbar ul{
   position: absolute;
   left: 50%;
@@ -51,7 +56,7 @@ html {
   display: flex;
   margin-top:12px ;
 }
-
+ 
 .navbar ul li{
   margin: 0 10px;
   display: inline-block;
@@ -59,19 +64,23 @@ html {
   justify-content: center;
 }
 
-
-
+.ponto{
+  color: #ffffff;
+}
+ 
+ 
+ 
 .navbar li:hover {
  transform:translateY(-10)
 }
-
+ 
 .navbar a:hover {
-    background-color: #8584a2;
-    color: #ffffff;
+    background-color: #15154F;
+    color: #FFFFFF;
     border-radius: 100px;
     transition: background-color 0.3s ease;
 }
-
+ 
 .navbar img{
     width: 100px;
     height: 50px;
@@ -79,8 +88,8 @@ html {
     border-radius: 4px;
     margin-left: 40px;
 }
-
-
+ 
+ 
 .navbar li {
     display: inline-block;
     padding: 0px 10px;
@@ -88,37 +97,61 @@ html {
     z-index: 1000;
     top: 20px;
 }
+ 
+ 
 
 
 /* QUEM SOMOS E VALORES PESSOAIS (WWA = WHO WHE ARE ) */
 
 .wwa{
-  color:#ffff;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-bottom: 100px;
+  color: #ffff;
+  margin-top: -20px;
+  margin-left: 70px;
+  margin-bottom: -100px;
+
 }
 
 .wwa h1{
-  font-size: 150px;
+  font-size: 100px;
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
 
 }
 
 .signi{
- font-size:50px;
- margin-top: -100px;
- color: #102A8C;
+ font-size: 15px;
+ margin-top: -80px;
+ color: #15154F;
 
 }
 .p2 {
-  font-size: 30px;
-  margin-top: -80px;
-  color: #8584a2;
+  font-size: 15px;
+  margin-top: -60px;
+  color: #F4F6FB;
+  font-family: 'Sora', system-ui, sans-serif;
  
  }
 
  .ponto{
   color: #ffff;
+ }
+
+ .p3{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  word-wrap: break-word;
+  color: #ffffff;
+  font-family: 'Sora', system-ui, sans-serif;
+  margin-left: 240px;
+}
+
+ .Sobre{
+  color: #ffffff;
+  margin-top: 400px;
+  margin-left: -700px;
+  text-align: center;
+  font-size: 50px;
  }
 
 
@@ -361,4 +394,23 @@ transition: 0.3s ease;
   transform: translateY(-100);
 
 
+}
+
+.wth-btn{
+  align-items: center;
+  gap:10px;
+  padding: 14px 25px;
+  background-color: #15154F;
+  color:white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  position: relative;
+  top:30px;
+}
+
+.wth-btn:hover{
+  transform: translateY(-3px);
+  background-color: #102A8C;
 }
