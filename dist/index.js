@@ -79,5 +79,4 @@ function Bolas() {
     iniciar();
 }
 window.addEventListener("DOMContentLoaded", Bolas);
-
 //# sourceMappingURL=index.js.map

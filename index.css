@@ -195,44 +195,6 @@ body {
     text-align: center;
 }
 
-
-
-.lista {
-    margin: 10px 0;
-    padding: 10px;
-    height: 55px;
-    display: flex;         /* Coloca os <li> lado a lado */
-    gap: 15px;             /* Cria um espaço entre os itens */
-    list-style: none;      /* Remove as bolinhas da lista */
-    padding: 0;            /* Remove o recuo padrão da lista */
-    margin: 0;  
-    justify-content: center;
-}
-
-.lista li{
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    transform: translateY(-10);
-    border-radius: 5px;
-    border:solid #ffffff;
-    width: 130px;
-    height: 50px;
-    display:flex;
-    box-shadow: #080404;
-    padding: 10px 20px;
-    background-color: grey;
-    font-size: large;
-    cursor:pointer;
-}
-
-
-.lista li:hover{
-    transform: translateY(-10px);
-    background-color: #080404;
-    color: white;
-}
-
-
-
 /* FORMULARIO DE CONTATO */
 .contac{
     box-shadow: gray;
@@ -443,4 +405,38 @@ transition: 0.3s ease;
 .wth-btn:hover{
   transform: translateY(-3px);
   background-color: #102A8C;
+}
+
+/* SEÇÃO DA STACK */
+
+
+.ferra{
+  color: #ffffff;
+  font-size: 70px;
+  text-align: center;   /* substitui o margin-left: 600px */
+}
+
+.stack{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chip{
+  display: inline-flex;   
+  align-items: center;
+  justify-content: center;
+  gap: 8px;               
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #02020E;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 16px;
+  border: solid;
+}
+
+.chip svg{
+  width: 20px;   
+  height: 20px;
 }
