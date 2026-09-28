@@ -6,14 +6,31 @@
   --accent: #0c0642;
   --shadow: 8px 8px 0px var(--primary);
 }
+
 html {
     scroll-behavior: smooth;
     background-color: #02020E;
     font-family: 'Lora', Georgia, 'Times New Roman', serif;
 }
 
+/* tira a margem padrão de 8px do body, pra o canvas encostar nas bordas */
+body {
+  margin: 0;
+}
 
-/* NAVBAR DA PAGINA  */
+/* FUNDO DA PAGINA (canvas das bolinhas, dentro da section .hero) */
+#bolas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;   /* fica atrás do texto */
+}
+
+
+
+/* PAGE NAVIGATION BAR */
 .navbar {
     background-color: #02020E;
     overflow: hidden;
@@ -21,24 +38,27 @@ html {
     top: 0;
     width: 100%;
     z-index: 1000;
-    position: fixed;
     display: flex;
-    font-family: 'Lora', Georgia, 'Times New Roman', serif;   
+    font-family: 'Sora', system-ui, sans-serif;
     list-style: none;
     text-decoration: none;
+    font-size: 18px;
   }
-  
-  
+ 
+ 
   .navbar a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     padding: 14px 20px;
     display: inline-block;
     align-items: center;
     justify-content: center;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    margin-left: -40px;
+    
   }
-  
+ 
 .navbar ul{
   position: absolute;
   left: 50%;
@@ -51,7 +71,7 @@ html {
   display: flex;
   margin-top:12px ;
 }
-
+ 
 .navbar ul li{
   margin: 0 10px;
   display: inline-block;
@@ -59,19 +79,23 @@ html {
   justify-content: center;
 }
 
-
-
+.ponto{
+  color: #ffffff;
+}
+ 
+ 
+ 
 .navbar li:hover {
  transform:translateY(-10)
 }
-
+ 
 .navbar a:hover {
-    background-color: #8584a2;
-    color: #ffffff;
+    background-color: #15154F;
+    color: #FFFFFF;
     border-radius: 100px;
     transition: background-color 0.3s ease;
 }
-
+ 
 .navbar img{
     width: 100px;
     height: 50px;
@@ -79,8 +103,8 @@ html {
     border-radius: 4px;
     margin-left: 40px;
 }
-
-
+ 
+ 
 .navbar li {
     display: inline-block;
     padding: 0px 10px;
@@ -88,32 +112,52 @@ html {
     z-index: 1000;
     top: 20px;
 }
+ 
+ 
 
 
 /* QUEM SOMOS E VALORES PESSOAIS (WWA = WHO WHE ARE ) */
 
 .wwa{
-  color:#ffff;
-  margin-top: 1px;
-  margin-left: 100px;
-  margin-bottom: 100px;
+  color: #ffff;
+  margin-top: -20px;
+  margin-left: 70px;
+  margin-bottom: -100px;
+  position: relative;
+}
+
+/* SECTION INICIAL: ocupa a janela toda e o canvas cobre ela inteira.
+   O recuo de 70px que era margin virou padding (fica dentro da caixa).
+   O padding-top de cima substitui os <br> e libera espaço pra navbar. */
+.wwa.hero{
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  padding: 80px 0 0 70px;
+}
+
+/* SECTION "SOBRE NÓS" */
+#wwa{
+  padding-top: 60px;
 }
 
 .wwa h1{
-  font-size: 150px;
+  font-size: 100px;
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
 
 }
 
 .signi{
- font-size:50px;
- margin-top: -100px;
- color: #102A8C;
+ font-size: 15px;
+ margin-top: -80px;
+ color: #15154F;
 
 }
 .p2 {
-  font-size: 30px;
-  margin-top: -80px;
-  color: #8584a2;
+  font-size: 15px;
+  margin-top: -60px;
+  color: #F4F6FB;
+  font-family: 'Sora', system-ui, sans-serif;
  
  }
 
@@ -121,12 +165,31 @@ html {
   color: #ffff;
  }
 
+ .p3{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  word-wrap: break-word;
+  color: #ffffff;
+  font-family: 'Sora', system-ui, sans-serif;
+  margin-left: 240px;
+}
+
+/* mesmo recuo do .p3, assim o título alinha com o texto */
+ .Sobre{
+  color: #ffffff;
+  font-size: 50px;
+  margin: 0 0 20px 240px;
+  text-align: left;
+ }
+
 
 /* CSS DOS SERVIÇOS  */
 .services {
     padding: 100px 20px;
     min-height: 100vh;
-    margin-top: 500px;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -361,4 +424,23 @@ transition: 0.3s ease;
   transform: translateY(-100);
 
 
+}
+
+.wth-btn{
+  align-items: center;
+  gap:10px;
+  padding: 14px 25px;
+  background-color: #15154F;
+  color:white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  position: relative;
+  top:30px;
+}
+
+.wth-btn:hover{
+  transform: translateY(-3px);
+  background-color: #102A8C;
 }

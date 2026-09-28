@@ -6,29 +6,48 @@
     <title>elo</title>
     <link rel="stylesheet" href="index.css" />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-/>
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
   <body>
     <section class="navbar" id="home">
       <img src="eloo_e_l_branco.png" alt="Logo da empresa" href="#home" />
       <ul>
-        <li><a href="#home">Início</a></li>
         <li><a href="#wwa">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#Processo">Processo</a></li>
+        <li><a href="#Stack">Stack</a></li>
       </ul>
     </section>
-    <br /><br /><br /><br /><br />
-    <section class="wwa" id="wwa">
+
+    <!-- SECTION INICIAL: a classe "hero" dá a altura e cobre a área do canvas -->
+    <section class="wwa hero">
       <h1 class="sigla">ELO</h1>
-      <h1 class="signi" id="signi">Efficiency, Logic, Optimization<span class="ponto">.</span></h1>
+      <h1 class="signi" id="signi">
+        Efficiency, Logic, Optimization<span class="ponto">.</span>
+      </h1>
       <p class="p2">
-      Nosso objetivo é ajudar nossos clientes a
-      alcançar seus <strong>objetivos</strong> por meio da tecnologia.
+        Nosso objetivo é ajudar nossos clientes a alcançar seus
+        <strong>objetivos</strong> por meio da tecnologia.
+      </p>
+      <a href="https://wa.me/5562947681368" target="_blank" class="wth-btn">
+        <i class="fa-brands fa-whatsapp"></i> Entre em contato
+      </a>
+      <canvas id="bolas"></canvas>
+    </section>
+
+    <section class="wwa" id="wwa">
+      <h2 class="Sobre">Sobre nós</h2>
+      <p class="p3">
+        A ELO é uma empresa de tecnologia que oferece soluções inovadoras para
+        empresas de todos os tamanhos. Nossa equipe é formada por profissionais
+        altamente qualificados e experientes, que estão sempre atualizados com
+        as últimas tendências e tecnologias do mercado.
       </p>
     </section>
+
     <section class="services" id="servicos">
       <h2>Serviços</h2>
       <ul class="lista">
@@ -37,49 +56,56 @@
         <li>Suporte técnico</li>
       </ul>
     </section>
+
     <section>
-      <div class="portifolio">
-      <img alt="projeto 1">    
-      <img alt="projeto 2">
-      <img alt="projeto 3">
-      <img alt="projeto 4">
-      <img alt="projeto 5">
+      <div class="portifolio" id="Projetos">
+        <img alt="projeto 1" />
+        <img alt="projeto 2" />
+        <img alt="projeto 3" />
+        <img alt="projeto 4" />
+        <img alt="projeto 5" />
       </div>
     </section>
+
     <section class="contact" id="contato">
       <h2>Contato</h2>
       <h1>Formulário de Contato</h1>
-    <form
-      action="https://formsubmit.co/eloenterprise.company@gmail.com"
-      method="POST"
-      class="form"
-    >
-      <label for="name">Nome</label>
-      <input type="text" name="name" id="name" required />
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" required />
-      <label for="message">Mensagem</label>
-      <textarea name="message" id="message" required></textarea>
-      <button type="submit">Enviar</button>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="http://127.0.0.1:5500//obrigado.html">
-    </form>
-
+      <form
+        action="https://formsubmit.co/eloenterprise.company@gmail.com"
+        method="POST"
+        class="form"
+      >
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" required></textarea>
+        <button type="submit">Enviar</button>
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500//obrigado.html"
+        />
+      </form>
     </section>
 
     <section class="footer">
       <p>&copy; 2026 elo. Todos os direitos reservados.</p>
       <div class="icons">
-      <a href="">
-        <i id="git" class="fa-brands fa-github"></i>
-      </a>  
-      <a href="">
-        <i id="email" class="fa-solid fa-envelope"></i>
-      </a>
-      <a href=""   >
+        <a href="">
+          <i id="git" class="fa-brands fa-github"></i>
+        </a>
+        <a href="">
+          <i id="email" class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="">
           <i id="zap" class="fa-brands fa-whatsapp"></i>
-      </a>
+        </a>
       </div>
     </section>
+
     <script src="./dist/index.js"></script>
-</html> 
+  </body>
+</html>
