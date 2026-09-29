@@ -118,14 +118,15 @@ body {
 
 /* QUEM SOMOS E VALORES PESSOAIS (WWA = WHO WHE ARE ) */
 
-.wwa{
-  color: #ffff;
-  margin-top: -20px;
-  margin-left: 70px;
-  margin-bottom: -100px;
-  position: relative;
+.wwa {
+    color: #ffff;
+    position: relative;
 }
 
+#wwa {
+    padding: 100px 0;
+    min-height: 500px;
+}
 /* SECTION INICIAL: ocupa a janela toda e o canvas cobre ela inteira.
    O recuo de 70px que era margin virou padding (fica dentro da caixa).
    O padding-top de cima substitui os <br> e libera espaço pra navbar. */
@@ -139,6 +140,7 @@ body {
 /* SECTION "SOBRE NÓS" */
 #wwa{
   padding-top: 60px;
+
 }
 
 .wwa h1{
@@ -186,13 +188,146 @@ body {
 
 
 /* CSS DOS SERVIÇOS  */
+/* ============================= */
+/* SEÇÃO DE SERVIÇOS */
+/* ============================= */
+
 .services {
-    padding: 100px 20px;
-    min-height: 100vh;
-    margin-top: 100px;
-    justify-content: center;
-    align-items: center;
+    color: #fff;
+    padding: 100px 70px;
+    min-height: 500px;
+}
+
+.services h2 {
+    margin: 0 0 50px 0;
+    font-size: 50px;
     text-align: center;
+}
+
+.servicos_aba {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servico {
+    width: 300px;
+    margin: 0;
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background: #02020E;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+/* Hover do card */
+
+.servico:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 255, 255, 0.7);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+
+/* Título */
+
+.servico h3 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.418);
+
+    transition:
+        transform 0.35s ease,
+        text-shadow 0.35s ease,
+        color 0.35s ease;
+}
+
+.servico:hover h3 {
+    transform: translateY(-3px);
+
+    color: #fff;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff;
+}
+
+
+/* Texto */
+
+.servico p {
+    color: #fff;
+    line-height: 1.6;
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+.servico:hover p {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* Tags */
+
+.service-tags {
+    transition: transform 0.35s ease;
+}
+
+.servico:hover .service-tags {
+    transform: translateY(-2px);
+}
+
+.tags {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 16px;
+    margin: 4px;
+
+    background-color: #02020E;
+    color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        text-shadow 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.tags:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    color: #fff;
+
+    border-color: #fff;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff;
+
+    box-shadow:
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 /* FORMULARIO DE CONTATO */
