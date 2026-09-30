@@ -805,6 +805,51 @@ a
 img { max-width: 100%; }
 body { overflow-x: hidden; }
 
+/* ---------- CONSERTO DA EQUIPE ----------
+   No index.css existe um "a" solto antes de ".membro {", que vira o
+   seletor "a .membro" e faz o estilo das fotos não ser aplicado.
+   Aqui o .membro é redefinido certo (apague também aquele "a"). */
+.membro {
+  position: relative;
+  width: 220px;
+  height: 280px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222;
+}
+
+.membro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.membro figcaption {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  color: #fffdfd;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.membro:hover img {
+  filter: brightness(1.6) contrast(0.8) blur(1px);
+  transform: scale(1.05);
+}
+
+.membro:hover figcaption { opacity: 1; }
+
 /* ---------- até 1200px: tira as margens fixas que estouram a tela ---------- */
 @media (max-width: 1200px) {
   .contact h2,
