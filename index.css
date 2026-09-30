@@ -1,23 +1,23 @@
 /* VARIAVEIS DE CORES QUE PODEM SER USADAS */
-
+ 
 :root {
   --primary: #000000;
   --secondary: #ffffff;
   --accent: #0c0642;
   --shadow: 8px 8px 0px var(--primary);
 }
-
+ 
 html {
     scroll-behavior: smooth;
     background-color: #02020E;
     font-family: 'Lora', Georgia, 'Times New Roman', serif;
 }
-
+ 
 /* tira a margem padrão de 8px do body, pra o canvas encostar nas bordas */
 body {
   margin: 0;
 }
-
+ 
 /* FUNDO DA PAGINA (canvas das bolinhas, dentro da section .hero) */
 #bolas {
   position: absolute;
@@ -27,9 +27,9 @@ body {
   height: 100%;
   z-index: -1;   /* fica atrás do texto */
 }
-
-
-
+ 
+ 
+ 
 /* PAGE NAVIGATION BAR */
 .navbar {
     background-color: #02020E;
@@ -56,7 +56,7 @@ body {
     justify-content: center;
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     margin-left: -40px;
-    
+   
   }
  
 .navbar ul{
@@ -78,7 +78,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+ 
 .ponto{
   color: #ffffff;
 }
@@ -114,14 +114,15 @@ body {
 }
  
  
-
-
+ 
+ 
 /* QUEM SOMOS E VALORES PESSOAIS (WWA = WHO WHE ARE ) */
-
+ 
 .wwa {
     color: #ffff;
+    position: relative;
 }
-
+ 
 #wwa {
     padding: 100px 0;
     min-height: 500px;
@@ -135,27 +136,24 @@ body {
   margin: 0;
   padding: 80px 0 0 70px;
 }
-
+ 
 /* SECTION "SOBRE NÓS" */
 #wwa{
   padding-top: 60px;
-
+ 
 }
-
+ 
 .wwa h1{
   font-size: 100px;
   font-family: 'Lora', Georgia, 'Times New Roman', serif;
-  margin: 0 0 20px 240px;
-  text-align: left;
-  margin-bottom: -50px;   /* <- esta linha puxa o parágrafo pra cima do título */
-  margin-top: 50px;
+ 
 }
-
+ 
 .signi{
  font-size: 15px;
  margin-top: -80px;
  color: #15154F;
-
+ 
 }
 .p2 {
   font-size: 15px;
@@ -164,11 +162,11 @@ body {
   font-family: 'Sora', system-ui, sans-serif;
  
  }
-
+ 
  .ponto{
   color: #ffff;
  }
-
+ 
  .p3{
   max-width: 700px;
   margin: 0 auto;
@@ -179,16 +177,16 @@ body {
   font-family: 'Sora', system-ui, sans-serif;
   margin-left: 240px;
 }
-
+ 
 /* mesmo recuo do .p3, assim o título alinha com o texto */
  .Sobre{
   color: #ffffff;
   font-size: 50px;
   margin: 0 0 20px 240px;
   text-align: left;
-  margin-bottom: -50px;
-  margin-top: 50px;
+  margin-bottom: px;
  }
+ 
 
 
 /* CSS DOS SERVIÇOS  */
@@ -250,6 +248,21 @@ body {
 
     color: #fff;
 }
+
+.linha{
+  width: 75%;
+  border: none;
+  border-top: 1px solid white;
+  margin-left: 240px;
+}
+
+.linha1{
+  width: 200%;
+  border: none;
+  border-top: 1px solid white;
+  margin-left: 0px;
+}
+
 
 
 /* Texto */
@@ -320,6 +333,37 @@ body {
     box-shadow:
         0 0 5px rgba(255, 255, 255, 0.5),
         0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Projetos */
+
+.Titulo{
+  color: #ffffff;
+  font-size: 50px;
+  margin: 0 0 20px 240px;
+  text-align: left;
+  margin-bottom: 700px;
+  margin-left: -1400px;
+}
+
+.projetos{
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: -500px;
+  
+}
+
+
+.portifolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+
 }
 
 /* FORMULARIO DE CONTATO */
