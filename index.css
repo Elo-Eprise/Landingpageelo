@@ -13,6 +13,7 @@ html {
     font-family: 'Lora', Georgia, 'Times New Roman', serif;
 }
 
+
 /* tira a margem padrão de 8px do body, pra o canvas encostar nas bordas */
 body {
   margin: 0;
@@ -732,7 +733,7 @@ color:white;
     font-size: 36px;
   }
 }
-
+a 
 .membro {
   position: relative;
   width: 220px;              /* mesmo tamanho pra todos */
@@ -794,4 +795,161 @@ color:white;
 
 .membro:hover figcaption {
   opacity: 1;
+}
+
+/* ===========================================================
+   RESPONSIVO - cole no FINAL do index.css
+   (precisa ficar depois de todo o resto pra sobrescrever)
+   =========================================================== */
+
+img { max-width: 100%; }
+body { overflow-x: hidden; }
+
+/* ---------- até 1200px: tira as margens fixas que estouram a tela ---------- */
+@media (max-width: 1200px) {
+  .contact h2,
+  .contact form { margin-left: 0; }
+
+  .contact h2 { text-align: center; }
+}
+
+/* ---------- TABLET (até 1024px) ---------- */
+@media (max-width: 1024px) {
+  .wwa.hero { padding: 110px 40px 0 40px; }
+  .wwa h1 { font-size: 80px; }
+
+  .Sobre,
+  .sobre { font-size: 56px; margin: 0 40px 20px 40px; }
+
+  .p3 { max-width: none; margin: 0 40px; }
+
+  .linha,
+  .linhaS {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+  }
+
+  .services { padding: 80px 40px; }
+  .servicos_aba { margin-left: 0; align-items: stretch; }
+  .servico { width: 100%; box-sizing: border-box; }
+
+  .card { width: calc(50% - 10px); }
+
+  .ferra { font-size: 50px; }
+}
+
+/* ---------- CELULAR (até 768px) ---------- */
+@media (max-width: 768px) {
+
+  /* NAVBAR: logo em cima, links embaixo (rolam de lado se não couberem) */
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar img {
+    width: 80px;
+    height: 40px;
+    margin: 5px 10px;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .navbar ul {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px 8px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    order: 2;
+  }
+
+  .navbar ul li { margin: 0 2px; padding: 0; }
+
+  /* navbar ficou mais alta: aumenta o espaço dos links âncora */
+  .wwa,
+  .section,
+  section[id] { scroll-margin-top: 110px; }
+
+  /* HERO */
+  .wwa.hero {
+    padding: 130px 20px 60px 20px;
+    min-height: 100vh;
+  }
+
+  .wwa h1 { font-size: 44px; }
+  .wwa.hero .signi { margin-top: 0; }
+  .p2 { margin-top: 12px; }
+
+  /* SOBRE */
+  #wwa { padding: 60px 0; min-height: auto; }
+
+  .Sobre,
+  .sobre { font-size: 32px; margin: 0 20px 10px 20px; }
+
+  .linha,
+  .linhaS { width: calc(100% - 40px); margin-left: 20px; }
+
+  .p3 { margin: 0 20px; text-align: left; }
+
+  /* SERVIÇOS */
+  .services { padding: 60px 20px; min-height: auto; }
+  .services h2 { font-size: 30px; margin-bottom: 16px; }
+  .servico { padding: 20px 0; }
+  .servico h3 { font-size: 28px; }
+
+  /* STACK */
+  .ferra { font-size: 36px; }
+  .chip { font-size: 14px; padding: 8px 14px; }
+
+  /* CONTATO */
+  .contact { padding: 60px 20px; min-height: auto; }
+  .contact form { padding: 30px 20px; }
+
+  /* EQUIPE: 2 por linha */
+  .esquipe { min-height: auto; padding: 60px 16px; }
+  .fotos { gap: 16px; }
+
+  .membro {
+    width: calc(50% - 8px);
+    height: 240px;
+  }
+
+  .membro figcaption strong { font-size: 1rem; }
+  .membro figcaption span { font-size: 0.8rem; }
+}
+
+/* ---------- CELULAR PEQUENO (até 450px) ---------- */
+@media (max-width: 450px) {
+  .wwa h1 { font-size: 36px; }
+  .Sobre,
+  .sobre { font-size: 28px; }
+  .ferra,
+  .Titulo,
+  .equipe { font-size: 30px; }
+
+  .card { width: 100%; }
+  .membro { width: 100%; max-width: 300px; height: 300px; }
+}
+
+/* ---------- TOUCH (sem hover): mostra o texto da equipe sempre ---------- */
+@media (hover: none) {
+  .membro figcaption {
+    opacity: 1;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+  }
+
+  .membro:hover img {
+    filter: none;
+    transform: none;
+  }
 }
