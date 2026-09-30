@@ -181,7 +181,14 @@ body {
 /* mesmo recuo do .p3, assim o título alinha com o texto */
  .Sobre{
   color: #ffffff;
-  font-size: 50px;
+  font-size: 80px;
+  margin: 0 0 20px 240px;
+  text-align: left;
+ }
+
+ .sobre{
+  color: #15154F;
+   font-size: 80px;
   margin: 0 0 20px 240px;
   text-align: left;
  }
@@ -192,6 +199,11 @@ body {
 /* SEÇÃO DE SERVIÇOS */
 /* ============================= */
 
+
+
+.cont{
+  color: #fff;
+}
 .services {
     color: #fff;
     padding: 100px 70px;
@@ -206,18 +218,16 @@ body {
 
 .servicos_aba {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 240px;
 }
-
+/* Cada serviço vira um bloco de texto, sem caixa */
 .servico {
-    width: 300px;
+    width: 800px;
     margin: 0;
     padding: 30px;
-
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    background: #02020E;
 
     transition:
         transform 0.35s ease,
@@ -225,24 +235,22 @@ body {
         border-color 0.35s ease;
 }
 
-/* Hover do card */
-
 .servico:hover {
     transform: translateY(-8px);
-
-    border-color: rgba(255, 255, 255, 0.7);
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.35),
-        0 0 20px rgba(255, 255, 255, 0.08);
 }
 
+/* Linha em cima de cada serviço */
+.linha1 {
+    width: 100%; 
+    border: none;
+    border-top: 1px solid white;
+    margin-left: 0;
+}
 
 /* Título */
-
 .servico h3 {
     font-size: 40px;
-    color: rgba(255, 255, 255, 0.418);
+    color: #fff;
 
     transition:
         transform 0.35s ease,
@@ -252,21 +260,14 @@ body {
 
 .servico:hover h3 {
     transform: translateY(-3px);
-
     color: #fff;
-
-    text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #fff;
 }
 
-
 /* Texto */
-
 .servico p {
     color: #fff;
     line-height: 1.6;
+    font-family: 'Sora', system-ui, sans-serif;
 
     transition:
         transform 0.35s ease,
@@ -278,9 +279,7 @@ body {
     opacity: 0.9;
 }
 
-
 /* Tags */
-
 .service-tags {
     transition: transform 0.35s ease;
 }
@@ -288,7 +287,6 @@ body {
 .servico:hover .service-tags {
     transform: translateY(-2px);
 }
-
 .tags {
     display: inline-flex;
     align-items: center;
@@ -351,7 +349,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  margin-left: 950px;
+  margin-left: -950px;
 }
 
 .contact form {
@@ -362,7 +360,7 @@ body {
   background-color: var(--secondary);
   box-shadow: var(--shadow);
   border-radius: 12px;
-  margin-left: 950px;
+  margin-left: -950px;
 }
 
 .contact .input-group {
@@ -498,29 +496,114 @@ transition: 0.3s ease;
 
 /* CSS DOS PROJETOS/PORTIFOLIO */
 
-.portifolio{
-  display :flex ;
-  gap:10px;
-  padding: 10px ;
-  justify-content: center;
-  align-items: center;
+/* CSS DOS PROJETOS/PORTIFOLIO */
+.projetos {
+  padding: 100px 70px;
+  color: #fff;
+}
+
+.Titulo {
+  color: #ffffff;
+  font-size: 50px;
+  margin: 0 0 40px 0;
   text-align: center;
 }
 
-.portifolio img{
-  border: solid;
-  border-radius: 4px;
-  height: 200px;
-  width: 500px;
+.portifolio {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.portifolio img:hover{
+.card {
+  position: relative;
+  width: 30%;
+  min-width: 260px;
+  height: 260px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
-  background-color:#424141;
-  transition: 0.3s ease;
-  transform: translateY(-100);
+.card:hover {
+  transform: translateY(-8px);
+}
 
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
+/* camada escura que aparece no hover */
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* texto que sobe no hover */
+.card .info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 20px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .info h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+}
+
+.card .info span {
+  font-size: 1rem;
+}
+
+/* celular: não tem hover, então o texto fica sempre visível */
+@media (hover: none) {
+  .card .overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
+  }
+
+  .card .info {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .projetos {
+    padding: 60px 20px;
+  }
+
+  .Titulo {
+    font-size: 36px;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
 
 .wth-btn{
@@ -548,7 +631,7 @@ transition: 0.3s ease;
 .ferra{
   color: #ffffff;
   font-size: 70px;
-  text-align: center;   /* substitui o margin-left: 600px */
+  text-align: center;   
 }
 
 .stack{
@@ -574,4 +657,141 @@ transition: 0.3s ease;
 .chip svg{
   width: 20px;   
   height: 20px;
+}
+
+
+.chip:hover {
+  transform: translateY(-4px) scale(1.05);
+  color: #fff;
+  border-color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+  box-shadow:
+    0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.linha{
+  width: 75%;
+  border: none;
+  border-top: 1px solid white;
+  margin-left: 240px;
+}
+
+.linhaS{
+  width: 75%;
+  border: none;
+  border-top: 1px solid white;
+  margin-left: 240px;
+}
+
+.wwa{
+    scroll-margin-top: 100px;
+}
+.section{
+  scroll-margin-top: 200px;
+}
+
+.contact h2{
+color:white;
+}
+
+
+/* CSS DA EQUIPE */
+
+.esquipe {
+  display: flex;
+  flex-direction: column;    /* título em cima, fotos embaixo */
+  align-items: center;       /* centraliza tudo na horizontal */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.equipe {
+  color: #ffffff;
+  font-size: 50px;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;               /* ocupa a largura toda pra centralizar de verdade */
+  max-width: 1800px;         /* cabem as 7 fotos em uma linha em tela grande */
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .equipe {
+    font-size: 36px;
+  }
+}
+
+.membro {
+  position: relative;
+  width: 220px;              /* mesmo tamanho pra todos */
+  height: 280px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222;          /* fundo pras fotos sem fundo (png) */
+}
+
+.membro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* padroniza sem esticar a foto */
+  object-position: center top;
+  display: block;
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.membro figcaption {
+  position: absolute;
+  inset: 0;                  /* cobre a foto toda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  color: #fffdfd;
+  opacity: 0;                /* escondido por padrão */
+  transition: opacity 0.4s ease;
+}
+
+.membro figcaption strong {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.membro figcaption span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.membro figcaption em {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.75;
+}
+
+/* hover: foto clareia e o texto aparece */
+.membro:hover img {
+  filter: brightness(1.6) contrast(0.8) blur(1px);
+  transform: scale(1.05);
+}
+
+.membro:hover figcaption {
+  opacity: 1;
 }
