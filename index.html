@@ -2,8 +2,19 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>elo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#08070a" />
+    <meta
+      name="description"
+      content="ELO: sites, sistemas e suporte técnico sob medida para o seu negócio."
+    />
+    <title>ELO · Efficiency, Logic, Optimization</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -12,6 +23,14 @@
   </head>
 
   <body>
+<div class="intro" aria-hidden="true">
+  <div class="intro-logo">
+    <img src="elo_aneis.png" alt="" class="logo-aneis" />
+    <img src="elo_el.png" alt="" class="logo-el" />
+  </div>
+</div>
+
+    <!-- NAVBAR -->
     <section class="navbar" id="home">
       <a href="#home">
         <img src="eloo_e_l_branco.png" alt="Logo da ELO" />
@@ -20,319 +39,529 @@
         <li><a href="#wwa">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#processo">Processo</a></li>
         <li><a href="#stack">Stack</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#equipe">Equipe</a></li>
       </ul>
-    </section>
-
-    <!-- SECTION INICIAL: a classe "hero" dá a altura e cobre a área do canvas -->
-    <section class="wwa hero">
-      <h1 class="sigla">ELO</h1>
-      <h1 class="signi" id="signi">
-        Efficiency, Logic, Optimization<span class="ponto">.</span>
-      </h1>
-      <p class="p2">
-        Nosso objetivo é ajudar nossos clientes a alcançar seus
-        <strong>objetivos</strong> por meio da tecnologia.
-      </p>
-      <a href="https://wa.me/5562998197704" target="_blank" class="wth-btn">
-        <i class="fa-brands fa-whatsapp"></i> Entre em contato
       </a>
-      <canvas id="bolas"></canvas>
     </section>
 
-    <section class="wwa" id="wwa">
-      <h2 class="Sobre">Nada aqui é feito </h2> <h2 class="sobre">por fazer, </h2>
-      <h2 class="Sobre">Cada escolha tem o seu </h2> <h2 class="sobre">propósito</h2>
-      <hr class="linha" />
-      <p class="p3">
-        A ELO é uma empresa de tecnologia que oferece soluções inovadoras para
-        empresas de todos os tamanhos. Nossa equipe é formada por profissionais
-        altamente qualificados e experientes, que estão sempre atualizados com
-        as últimas tendências e tecnologias do mercado.
-      </p>
-    </section>
+    <main>
+      <!-- HERO -->
+      <section class="wwa hero">
+        <div class="hero-conteudo">
+          <h1 class="signi" id="signi">
+            Efficiency,<br />
+            Logic, <span class="destaque">Optimization</span><span class="ponto">.</span>
+          </h1>
+          <p class="p2">
+            Sites, sistemas e suporte técnico <strong>sob medida</strong>.
+            Tudo feito do zero para o seu negócio. Nada de modelo pronto.
+          </p>
+          <div class="hero-acoes">
+            <a
+              href="https://wa.me/5562947681368"
+              target="_blank"
+              rel="noopener"
+              class="wth-btn"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Fale conosco  
+            </a>
+          </div>
+        </div>
+        </div>
+        <canvas id="bolas"></canvas>
+      </section>
 
-<section class="services" id="servicos">
-  <h2>Feito para você. Pensado em </h2> <h2 class="sobre">cada detalhe.</h2>
-  <div class="servicos_aba">
-    <div class="servico">
-      <hr class="linha1" />
-      <h3>Sites</h3>
-      <p>
-        Criamos sites modernos e personalizados, pensados para fortalecer a
-        presença digital da sua empresa com praticidade, desempenho e bons
-        resultados.
-      </p>
-      <div class="service-tags">
-        <span class="tags">React</span>
-        <span class="tags">Vite</span>
+      <!-- SOBRE / MANIFESTO -->
+      <section class="wwa" id="wwa">
+        <div class="contem">
+          <h2 class="sobre-titulo">
+          Detalhes que fazem a <span class="destaque">diferença</span>
+          </h2>
+          <div class="duas-colunas">
+            <p class="p3">
+              A gente não entrega soluções genéricas, não trabalha com modelo
+              pronto e não acredita em tecnologia feita de qualquer jeito. Cada
+              site, sistema ou projeto é <strong>desenvolvido do zero</strong>
+              pelo nosso time, pensado para a realidade de cada negócio e com
+              atenção a cada detalhe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section class="services" id="servicos">
+        <div class="contem">
+          <h2 class="sobre-titulo">
+            Tecnologia inteligente. Soluções feitas <span class="destaque">para você.</span>
+          </h2>
+          <p class="sub">
+          Cada projeto é único, criado do zero para atender às suas necessidades. Cuidamos de cada etapa, da primeira ideia até a entrega final, com tecnologia, qualidade e atenção a cada detalhe.
+          </p>
+          <div class="servicos_aba">
+            <a
+              class="servico"
+              href="https://wa.me/5562998197704"
+              target="_blank"
+              rel="noopener"
+            >
+              <hr class="linha1" />
+              <span class="num">01</span>
+              <div class="servico-corpo">
+                <h3>Sites</h3>
+                <p>
+                  Criamos sites modernos e personalizados, pensados para
+                  fortalecer a presença digital da sua empresa com praticidade,
+                  desempenho e bons resultados.
+                </p>
+                <div class="service-tags">
+                  <span class="tags">React</span>
+                  <span class="tags">Vite</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="servico"
+              href="https://wa.me/5562998197704"
+              target="_blank"
+              rel="noopener"
+            >
+              <hr class="linha1" />
+              <span class="num">02</span>
+              <div class="servico-corpo">
+                <h3>Sistemas</h3>
+                <p>
+                  Desenvolvemos sistemas sob medida e ajudamos sua empresa a
+                  encontrar as melhores soluções tecnológicas para otimizar
+                  processos, organização e produtividade.
+                </p>
+                <div class="service-tags">
+                  <span class="tags">Python</span>
+                  <span class="tags">SQL</span>
+                  <span class="tags">Painel próprio</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="servico"
+              href="https://wa.me/5562998197704"
+              target="_blank"
+              rel="noopener"
+            >
+              <hr class="linha1" />
+              <span class="num">03</span>
+              <div class="servico-corpo">
+                <h3>Suporte técnico</h3>
+                <p>
+                  Oferecemos suporte para resolver problemas e garantir que seus
+                  sistemas e ferramentas funcionem de forma adequada.
+                </p>
+                <div class="service-tags">
+                  <span class="tags">Google</span>
+                  <span class="tags">Automações</span>
+                  <span class="tags">Manutenção</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section class="projetos" id="Projetos">
+        <div class="contem">
+          <h2 class="Titulo">Projetos que <span class="destaque">fazem</span></h2>
+          <p class="sub">
+            Os primeiros projetos estarão aqui em breve.
+          </p>
+
+          <div class="portifolio">
+            <div class="card">
+              <img
+                src="WhatsApp-Image-2026-09-28-at-15.12.08.png"
+                alt="Projeto futuro 1"
+              />
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Em breve</h3>
+                <span>Projetos futuro</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="WhatsApp-Image-2026-09-28-at-15.12.08.png"
+                alt="Projeto futuro 2"
+              />
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Em breve</h3>
+                <span>Projetos futuro</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="WhatsApp-Image-2026-09-28-at-15.12.08.png"
+                alt="Projeto futuro 3"
+              />
+              <div class="overlay"></div>
+              <div class="info">
+                <h3>Em breve</h3>
+                <span>Projetos futuro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESSO -->
+      <section class="processo" id="processo">
+        <div class="contem">
+          <h2 class="sobre-titulo">Do planejamento  <span class="destaque">até</span> o resultado</h2>
+          <p class="sub">
+            Como pensamos para chegar no melhor resultado <strong>para você</strong>
+          </p>
+
+          <ol class="etapas">
+            <li>
+              <span class="num">01</span>
+              <h3>Imersão</h3>
+              <p>
+                Entendemos o problema de verdade e saímos com escopo e proposta
+                antes de começar.
+              </p>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <h3>Planejamento</h3>
+              <p>
+                Definimos as escolhas que sustentam o projeto e registramos
+                tudo em um documento claro.
+              </p>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <h3>Design</h3>
+              <p>
+                Desenhamos as telas e o caminho do usuário. Você aprova antes
+                de virar código.
+              </p>
+            </li>
+            <li>
+              <span class="num">04</span>
+              <h3>Desenvolvimento</h3>
+              <p>
+                Entregas em ciclos curtos, com um endereço de teste sempre no
+                ar para você acompanhar.
+              </p>
+            </li>
+            <li>
+              <span class="num">05</span>
+              <h3>Testes</h3>
+              <p>
+                Testamos tudo antes de publicar, para quebrar antes que o seu
+                cliente quebre.
+              </p>
+            </li>
+            <li>
+              <span class="num">06</span>
+              <h3>Publicação e suporte</h3>
+              <p>
+                Entra no ar com acompanhamento e atenção caso algo saia do
+                lugar.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- STACK -->
+      <section class="section" id="stack">
+        <div class="contem">
+          <h2 class="ferra">
+            Ferramentas que <span class="destaque">escolhemos,</span> para vocês.
+          </h2>
+
+          <div class="stack" data-reveal="">
+            <span class="chip"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="2.05" fill="#61DAFB"></circle>
+                <g fill="none" stroke="#61DAFB" stroke-width="1">
+                  <ellipse cx="12" cy="12" rx="11" ry="4.2"></ellipse>
+                  <ellipse
+                    cx="12"
+                    cy="12"
+                    rx="11"
+                    ry="4.2"
+                    transform="rotate(60 12 12)"
+                  ></ellipse>
+                  <ellipse
+                    cx="12"
+                    cy="12"
+                    rx="11"
+                    ry="4.2"
+                    transform="rotate(120 12 12)"
+                  ></ellipse>
+                </g></svg
+              ><span>React</span></span
+            >
+            <span class="chip"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                  <linearGradient id="vite-v1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#41D1FF"></stop>
+                    <stop offset="100%" stop-color="#BD34FE"></stop>
+                  </linearGradient>
+                  <linearGradient id="vite-v2" x1="0" y1="0" x2=".4" y2="1">
+                    <stop offset="0%" stop-color="#FFEA83"></stop>
+                    <stop offset="8%" stop-color="#FFDD35"></stop>
+                    <stop offset="100%" stop-color="#FFA800"></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M23 3.6 12.4 22.5c-.2.4-.8.4-1 0L.8 3.6c-.2-.4.1-.9.6-.8l10.5 1.9c.1 0 .2 0 .3 0l10.3-1.9c.5-.1.8.4.5.8z"
+                  fill="url(#vite-v1)"
+                ></path>
+                <path
+                  d="M16.7 1.3 9 2.8c-.1 0-.2.1-.2.3l-.5 8c0 .2.2.3.3.3l2.2-.5c.2 0 .4.1.3.4l-.6 3.2c0 .2.1.4.4.3l1.3-.4c.2-.1.4.1.4.3l-1 5c-.1.3.3.5.5.2l.1-.2 6.2-12.4c.1-.3-.1-.5-.4-.5l-2.2.4c-.2.1-.4-.1-.3-.4l1.5-5c.1-.3-.2-.5-.4-.5z"
+                  fill="url(#vite-v2)"
+                ></path></svg
+              ><span>Vite</span></span
+            >
+            <span class="chip"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9 1.2c-1 0-2 .1-2.8.3-2.5.4-3 1.4-3 3.1v2.2h6v.8H3.6c-1.7 0-3.2 1-3.7 3-.5 2.2-.5 3.6 0 5.9.4 1.7 1.4 3 3.1 3h2.1v-2.6c0-2 1.7-3.7 3.7-3.7h6c1.6 0 2.9-1.3 2.9-3V4.6c0-1.6-1.3-2.8-2.9-3.1-1-.2-2-.3-2.9-.3zM8.7 3c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1S8.1 3 8.7 3z"
+                  fill="#3776AB"
+                ></path>
+                <path
+                  d="M19.5 7.6v2.5c0 2.1-1.8 3.8-3.7 3.8h-6c-1.6 0-2.9 1.4-2.9 3v5.6c0 1.6 1.4 2.5 2.9 3 1.8.5 3.6.6 5.8 0 1.5-.4 2.9-1.3 2.9-3v-2.2h-6v-.8h9c1.7 0 2.4-1.2 3-3 .6-1.9.6-3.7 0-6-.4-1.7-1.3-3-3-3h-2zm-3.4 14.4c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1.5-1.1 1.1-1.1z"
+                  fill="#FFD43B"
+                ></path></svg
+              ><span>Python</span></span
+            >
+            <span class="chip"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <g fill="#00758F">
+                  <path
+                    d="M21.8 15.2c-1.3-.1-2.3.1-3.1.4-.2.1-.6.1-.7.4.1.1.1.3.2.5.2.3.5.7.8 1 .3.2.7.5 1 .7.6.4 1.3.6 1.9 1 .4.2.7.5 1.1.7.2.1.3.3.5.4v-.1c-.1-.1-.1-.3-.2-.4l-.4-.4c-.4-.5-.9-1-1.4-1.4-.4-.3-1.4-.7-1.6-1.2h-.1c.3 0 .7-.1 1-.2.5-.1 1-.1 1.5-.3l.7-.2v-.1c-.3-.3-.5-.6-.8-.8z"
+                  ></path>
+                  <path
+                    d="M8.8 4.5c-.6 0-1 .1-1.4.2v.1h.1c.3.5.7.9 1.1 1.4l.9 1.8.1-.1c.5-.4.7-1 .7-1.8-.2-.2-.2-.4-.3-.6-.2-.4-.7-.6-1.2-1z"
+                  ></path>
+                  <path
+                    d="M22 20.8c-1.9-.1-3.4-.3-4.6-.8-.4-.2-1-.5-1-1 0-.3.3-.7.6-.8.5-.2 1.3-.2 1.9-.4.3-.1.7-.2 1-.4-1-.1-2-.2-3.1-.2-.7 0-1.5.1-2.2.2-.3.1-.7.2-.9.5-.3.4-.2 1 .1 1.4.5.7 1.4 1.1 2.3 1.4 1.1.4 2.4.6 3.7.7.5 0 1 .1 1.5.1.3 0 .7-.1 1-.2-.1-.2-.2-.4-.3-.5z"
+                  ></path>
+                </g>
+                <path
+                  d="M13.6 3.5c-.4-.6-.9-1.1-1.5-1.5C10.4.8 8 .5 5.6.9 3.9 1.2 2.4 2 1.4 3.3c-.9 1.1-1.2 2.5-1 4 .2 1.6.9 3 1.9 4.2 1.2 1.5 2.8 2.6 4.5 3.4 1.6.7 3.4 1.1 5.2 1.2h.4c-.1-.3-.3-.6-.5-.8-1-1.2-2-2.4-2.6-3.9-.5-1.2-.6-2.5-.2-3.7.4-1.3 1.4-2.3 2.6-2.9.6-.3 1.2-.5 1.9-.6-.1-.2-.2-.4-.4-.6l.4-.1z"
+                  fill="#00758F"
+                ></path>
+                <path
+                  d="M6.6 6.4c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1.5-1.1 1.1-1.1z"
+                  fill="#fff"
+                ></path>
+                <path
+                  d="M18.7 12.6c-.5-1.7-1.6-3.2-3-4.2-.7-.5-1.5-.9-2.4-1-.4 0-.8 0-1.2.2.4.5.8 1 1.1 1.6.7 1.4 1 3 1.5 4.5.3.9.7 1.8 1.4 2.4.6.5 1.4.7 2.2.6.5-.1 1-.3 1.3-.7-.4-1.2-.6-2.3-.9-3.4z"
+                  fill="#F29111"
+                ></path></svg
+              ><span>SQL</span></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPE -->
+      <section class="esquipe" id="equipe">
+        <div class="contem">
+          <h2 class="equipe">Quem são os <span class="destaque">desenvolvedores</span> do seu projeto</h2>
+
+          <div class="fotos">
+            <figure class="membro">
+              <img src="calebe.jpeg" alt="Calebe Menezes de Oliveira" />
+              <figcaption>
+                <strong>Calebe</strong>
+                <span>Analista de Documentação e Compliance</span>
+                <em>BackEnd</em>
+              </figcaption>
+            </figure>
+
+            <figure class="membro">
+              <img src="carolina.png" alt="Carolina Pedrosa Linsmeyer" />
+              <figcaption>
+                <strong>Carolina</strong>
+                <span>Gerente de Projetos / Scrum Master</span>
+                <em>FrontEnd</em>
+              </figcaption>
+            </figure>
+
+            <figure class="membro">
+              <img src="pedro.png" alt="Pedro Fernandes de Jesus" />
+              <figcaption>
+                <strong>Pedro</strong>
+                <span>Líder Técnico / Especialista de Execução</span>
+                <em>FullStack</em>
+              </figcaption>
+            </figure>
+
+            <figure class="membro">
+              <img src="kaue.jpeg" alt="Kauê Yuki Kozima" />
+              <figcaption>
+                <strong>Kauê</strong>
+                <span>Analista de Qualidade (QA) e Normas</span>
+                <em>BackEnd</em>
+              </figcaption>
+            </figure>
+
+            <figure class="membro">
+              <img src="sophiasemfundo.png" alt="Sophia Galvão Vieira" />
+              <figcaption>
+                <strong>Sophia</strong>
+                <span>Desenvolvedora / Designer</span>
+                <em>FrontEnd</em>
+              </figcaption>
+            </figure>
+
+            <figure class="membro">
+              <img src="evelyn.png" alt="Evelyn Leandro Falcioni" />
+              <figcaption>
+                <strong>Evelyn</strong>
+                <span>Desenvolvedora / Designer</span>
+                <em>FrontEnd</em>
+              </figcaption>
+            </figure>
+
+            <figure class="membro">
+              <img src="vitin.jpeg" alt="Vítor Ferreira Ramos" />
+              <figcaption>
+                <strong>Vítor</strong>
+                <span>Desenvolvedor / Designer</span>
+                <em>FrontEnd</em>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="contact" id="contato">
+        <div class="contem contato-grade">
+          <div class="contato-texto">
+            <h2 class="sobre-titulo">
+             Nos fale o problema, que nós <span class="destaque">resolvemos.</span>
+            </h2>
+            <p class="sub">
+              Fale direto com quem desenvolve, 
+              formulário.
+            </p>
+            </a>
+          </div>
+
+          <form
+            action="https://formsubmit.co/eloenterprise.company@gmail.com"
+            method="POST"
+            class="form-card"
+          >
+            <h3 class="form-titulo">Envie sua mensagem</h3>
+
+            <div class="form-corpo">
+              <div class="form-linha">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Seu nome"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Seu E-mail"
+                  required
+                />
+              </div>
+
+              <input
+                type="text"
+                name="_subject"
+                id="assunto"
+                placeholder="Assunto"
+                required
+              />
+
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Digite sua mensagem"
+                required
+              ></textarea>
+
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://wondrous-pavlova-5e1e3f.netlify.app/obrigado.html"
+              />
+
+              <button type="submit">Enviar Mensagem</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <div class="contem footer-grade">
+        <div class="footer-marca">
+          <img src="eloo_e_l_branco.png" alt="Logo da ELO" />
+          <p class="footer-frase">
+            Eficiência, lógica e <span class="destaque">otimização</span> em cada entrega.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegar</h4>
+          <ul>
+            <li><a href="#wwa">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#Projetos">Trabalho</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#stack">Stack</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <div class="icons">
+            <a href="#" aria-label="GitHub">
+              <i id="git" class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="mailto:eloenterprise.company@gmail.com"
+              aria-label="E-mail"
+            >
+              <i id="icon-email" class="fa-solid fa-envelope"></i>
+            </a>
+            <a
+              href="https://wa.me/5562998197704"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <i id="zap" class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="servico">
-      <hr class="linha1" />
-      <h3>Sistemas</h3>
-      <p>
-        Desenvolvemos sistemas sob medida e ajudamos sua empresa a
-        encontrar as melhores soluções tecnológicas para otimizar
-        processos, organização e produtividade.
-      </p>
-      <div class="service-tags">
-        <span class="tags">Python</span>
-        <span class="tags">SQL</span>
-        <span class="tags">Painel próprio</span>
-      </div>
-    </div>
-
-    <div class="servico">
-      <hr class="linha1" />
-      <h3>Suporte técnico</h3>
-      <p>
-        Oferecemos suporte para resolver problemas e garantir que seus
-        sistemas e ferramentas funcionem de forma adequada.
-      </p>
-      <div class="service-tags">
-        <span class="tags">Google</span>
-        <span class="tags">Automações</span>
-        <span class="tags">Manutenção</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="projetos" id="Projetos">
-  <h2 class="Titulo">Nossos projetos</h2>
-  <div class="portifolio">
-
-    <div class="card">
-      <img src="WhatsApp-Image-2026-09-28-at-15.12.08.png" alt="Projeto futuro 1" />
-      <div class="overlay"></div>
-      <div class="info">
-        <h3>Em breve</h3>
-        <span>Projeto futuro</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="WhatsApp-Image-2026-09-28-at-15.12.08.png" alt="Projeto futuro 2" />
-      <div class="overlay"></div>
-      <div class="info">
-        <h3>Em breve</h3>
-        <span>Projeto futuro</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="WhatsApp-Image-2026-09-28-at-15.12.08.png" alt="Projeto futuro 3" />
-      <div class="overlay"></div>
-      <div class="info">
-        <h3>Em breve</h3>
-        <span>Projeto futuro</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <section class="section" id="stack">
-      <h2 class="ferra">Nossas Ferramentas</h2>
-      <div class="stack" data-reveal="">
-        <span class="chip"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="2.05" fill="#61DAFB"></circle>
-            <g fill="none" stroke="#61DAFB" stroke-width="1">
-              <ellipse cx="12" cy="12" rx="11" ry="4.2"></ellipse>
-              <ellipse
-                cx="12"
-                cy="12"
-                rx="11"
-                ry="4.2"
-                transform="rotate(60 12 12)"
-              ></ellipse>
-              <ellipse
-                cx="12"
-                cy="12"
-                rx="11"
-                ry="4.2"
-                transform="rotate(120 12 12)"
-              ></ellipse>
-            </g></svg
-          ><span>React</span></span>
-        <span class="chip"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
-            <defs>
-              <linearGradient id="vite-v1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#41D1FF"></stop>
-                <stop offset="100%" stop-color="#BD34FE"></stop>
-              </linearGradient>
-              <linearGradient id="vite-v2" x1="0" y1="0" x2=".4" y2="1">
-                <stop offset="0%" stop-color="#FFEA83"></stop>
-                <stop offset="8%" stop-color="#FFDD35"></stop>
-                <stop offset="100%" stop-color="#FFA800"></stop>
-              </linearGradient>
-            </defs>
-            <path
-              d="M23 3.6 12.4 22.5c-.2.4-.8.4-1 0L.8 3.6c-.2-.4.1-.9.6-.8l10.5 1.9c.1 0 .2 0 .3 0l10.3-1.9c.5-.1.8.4.5.8z"
-              fill="url(#vite-v1)"
-            ></path>
-            <path
-              d="M16.7 1.3 9 2.8c-.1 0-.2.1-.2.3l-.5 8c0 .2.2.3.3.3l2.2-.5c.2 0 .4.1.3.4l-.6 3.2c0 .2.1.4.4.3l1.3-.4c.2-.1.4.1.4.3l-1 5c-.1.3.3.5.5.2l.1-.2 6.2-12.4c.1-.3-.1-.5-.4-.5l-2.2.4c-.2.1-.4-.1-.3-.4l1.5-5c.1-.3-.2-.5-.4-.5z"
-              fill="url(#vite-v2)"
-            ></path></svg
-          ><span>Vite</span></span
-        >
-        <span class="chip"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M11.9 1.2c-1 0-2 .1-2.8.3-2.5.4-3 1.4-3 3.1v2.2h6v.8H3.6c-1.7 0-3.2 1-3.7 3-.5 2.2-.5 3.6 0 5.9.4 1.7 1.4 3 3.1 3h2.1v-2.6c0-2 1.7-3.7 3.7-3.7h6c1.6 0 2.9-1.3 2.9-3V4.6c0-1.6-1.3-2.8-2.9-3.1-1-.2-2-.3-2.9-.3zM8.7 3c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1S8.1 3 8.7 3z"
-              fill="#3776AB"
-            ></path>
-            <path
-              d="M19.5 7.6v2.5c0 2.1-1.8 3.8-3.7 3.8h-6c-1.6 0-2.9 1.4-2.9 3v5.6c0 1.6 1.4 2.5 2.9 3 1.8.5 3.6.6 5.8 0 1.5-.4 2.9-1.3 2.9-3v-2.2h-6v-.8h9c1.7 0 2.4-1.2 3-3 .6-1.9.6-3.7 0-6-.4-1.7-1.3-3-3-3h-2zm-3.4 14.4c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1.5-1.1 1.1-1.1z"
-              fill="#FFD43B"
-            ></path></svg
-          ><span>Python</span></span
-        >
-        <span class="chip"
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
-            <g fill="#00758F">
-              <path
-                d="M21.8 15.2c-1.3-.1-2.3.1-3.1.4-.2.1-.6.1-.7.4.1.1.1.3.2.5.2.3.5.7.8 1 .3.2.7.5 1 .7.6.4 1.3.6 1.9 1 .4.2.7.5 1.1.7.2.1.3.3.5.4v-.1c-.1-.1-.1-.3-.2-.4l-.4-.4c-.4-.5-.9-1-1.4-1.4-.4-.3-1.4-.7-1.6-1.2h-.1c.3 0 .7-.1 1-.2.5-.1 1-.1 1.5-.3l.7-.2v-.1c-.3-.3-.5-.6-.8-.8z"
-              ></path>
-              <path
-                d="M8.8 4.5c-.6 0-1 .1-1.4.2v.1h.1c.3.5.7.9 1.1 1.4l.9 1.8.1-.1c.5-.4.7-1 .7-1.8-.2-.2-.2-.4-.3-.6-.2-.4-.7-.6-1.2-1z"
-              ></path>
-              <path
-                d="M22 20.8c-1.9-.1-3.4-.3-4.6-.8-.4-.2-1-.5-1-1 0-.3.3-.7.6-.8.5-.2 1.3-.2 1.9-.4.3-.1.7-.2 1-.4-1-.1-2-.2-3.1-.2-.7 0-1.5.1-2.2.2-.3.1-.7.2-.9.5-.3.4-.2 1 .1 1.4.5.7 1.4 1.1 2.3 1.4 1.1.4 2.4.6 3.7.7.5 0 1 .1 1.5.1.3 0 .7-.1 1-.2-.1-.2-.2-.4-.3-.5z"
-              ></path>
-            </g>
-            <path
-              d="M13.6 3.5c-.4-.6-.9-1.1-1.5-1.5C10.4.8 8 .5 5.6.9 3.9 1.2 2.4 2 1.4 3.3c-.9 1.1-1.2 2.5-1 4 .2 1.6.9 3 1.9 4.2 1.2 1.5 2.8 2.6 4.5 3.4 1.6.7 3.4 1.1 5.2 1.2h.4c-.1-.3-.3-.6-.5-.8-1-1.2-2-2.4-2.6-3.9-.5-1.2-.6-2.5-.2-3.7.4-1.3 1.4-2.3 2.6-2.9.6-.3 1.2-.5 1.9-.6-.1-.2-.2-.4-.4-.6l.4-.1z"
-              fill="#00758F"
-            ></path>
-            <path
-              d="M6.6 6.4c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1.5-1.1 1.1-1.1z"
-              fill="#fff"
-            ></path>
-            <path
-              d="M18.7 12.6c-.5-1.7-1.6-3.2-3-4.2-.7-.5-1.5-.9-2.4-1-.4 0-.8 0-1.2.2.4.5.8 1 1.1 1.6.7 1.4 1 3 1.5 4.5.3.9.7 1.8 1.4 2.4.6.5 1.4.7 2.2.6.5-.1 1-.3 1.3-.7-.4-1.2-.6-2.3-.9-3.4z"
-              fill="#F29111"
-            ></path></svg
-          ><span>SQL</span></span
-        >
-      </div>
-    </section>
-    
-       <section class="contact" id="contato">
-      <h2 class="cont">Contato</h2>
-      <form
-        action="https://formsubmit.co/eloenterprise.company@gmail.com"
-        method="POST"
-        class="form"
-      >
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required />
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required />
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message" required></textarea>
-        <button type="submit">Enviar</button>
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://wondrous-pavlova-5e1e3f.netlify.app/obrigado.html"
-        />
-      </form>
-    </section>
-
-<section class="esquipe">
-  <h1 clas="equipe">Nossa Equipe</h1>
-  
-  <div class="fotos">
-
-    <figure class="membro">
-      <img src="calebe.jpeg" alt="Calebe Menezes de Oliveira">
-      <figcaption>
-        <strong>Calebe</strong>
-        <span>Analista de Documentação e Compliance</span>
-        <em>BackEnd</em>
-      </figcaption>
-    </figure>
-
-    <figure class="membro">
-      <img src="carolina.png" alt="Carolina Pedrosa Linsmeyer">
-      <figcaption>
-        <strong>Carolina</strong>
-        <span>Gerente de Projetos / Scrum Master</span>
-        <em>FrontEnd</em>
-      </figcaption>
-    </figure>
-
-    <figure class="membro">
-      <img src="pedro.png" alt="Pedro Fernandes de Jesus">
-      <figcaption>
-        <strong>Pedro</strong>
-        <span>Líder Técnico / Especialista de Execução</span>
-        <em>FullStack</em>
-      </figcaption>
-    </figure>
-
-    <figure class="membro">
-      <img src="kaue.jpeg" alt="Kauê Yuki Kozima">
-      <figcaption>
-        <strong>Kauê</strong>
-        <span>Analista de Qualidade (QA) e Normas</span>
-        <em>BackEnd</em>
-      </figcaption>
-    </figure>
-
-    <figure class="membro">
-      <img src="sophiasemfundo.png" alt="Sophia Galvão Vieira">
-      <figcaption>
-        <strong>Sophia</strong>
-        <span>Desenvolvedora / Designer</span>
-        <em>FrontEnd</em>
-      </figcaption>
-    </figure>
-
-    <figure class="membro">
-      <img src="evelyn.png" alt="Evelyn Leandro Falcioni">
-      <figcaption>
-        <strong>Evelyn</strong>
-        <span>Desenvolvedora / Designer</span>
-        <em>FrontEnd</em>
-      </figcaption>
-    </figure>
-
-    <figure class="membro">
-      <img src="vitin.jpeg" alt="Vítor Ferreira Ramos">
-      <figcaption>
-        <strong>Vítor</strong>
-        <span>Desenvolvedor / Designer</span>
-        <em>FrontEnd</em>
-      </figcaption>
-    </figure>
-
-  </div>
-</section>
-
-
-    <section class="footer">
-      <p>&copy; 2026 elo. Todos os direitos reservados.</p>
-      <div class="icons">
-        <a href="#" aria-label="GitHub">
-          <i id="git" class="fa-brands fa-github"></i>
-        </a>
-        <a href="mailto:eloenterprise.company@gmail.com" aria-label="E-mail">
-          <i id="icon-email" class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="https://wa.me/5562998197704" target="_blank" aria-label="WhatsApp">
-          <i id="zap" class="fa-brands fa-whatsapp"></i>
-        </a>
-      </div>
-    </section>
+      <p class="copy">&copy; 2026 ELO · Todos os direitos reservados.</p>
+    </footer>
 
     <script src="./dist/index.js"></script>
   </body>
